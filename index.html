@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Wear-Any-Way">
+  <meta name="keywords" content="Virtual Try-on, Customizable Generation, Diffusion Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wear-Any-Way</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Wear-Any-Way: Manipulable Virtual Try-on via Sparse Correspondence Alignment</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Mengting Chen</a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              Xi Chen</a>&nbsp</a>&nbsp  
+            </span>
+            
+            <span class="author-block">
+              Zhonghua Zhai  </a></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              Chen Ju  </a></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              Xuewen Hong  </a></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              Jinsong Lan </a></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              Shuai Xiao  </a></a>&nbsp</a>&nbsp  
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Alibaba Group</a>&nbsp</a>&nbsp  </span>
+            
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=   "https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+                </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+      <div class="container">
+          <div class="item item-steve">
+          <img src="./generate_images/images/teaser/fig_3_teaser_v3.png"  width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper introduces a novel framework for virtual try-on, termed <b>Wear-Any-Way</b>.
+            Different from previous methods, Wear-Any-Way is a <i>customizable solution</i>. Besides generating high-fidelity results, our method supports users to precisely manipulate the wearing style. 
+            To achieve this goal, we first construct a strong pipeline for standard virtual try-on, supporting single/multiple garment try-on and model-to-model settings in complicated scenarios.
+            To make it manipulable, we propose sparse correspondence alignment which involves point-based control to guide the generation for specific locations. 
+            With this design, Wear-Any-Way gets state-of-the-art performance for the standard setting and provides a novel interaction form for customizing the wearing style.
+            For instance, it supports users to drag the sleeve to make it rolled up, drag the coat to make it open, and utilize clicks to control the style of tuck, <i>etc.</i> Wear-Any-Way enables more liberated and flexible expressions of the attires, holding profound implications in the fashion industry.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    
+
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" style="text-align: center;">Manipulation with click</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Wear-Any-Way supports users to assign arbitrary numbers of control points on the garment and person image to customize the generation, bringing diverse potentials for real-world applications.
+                </p>
+              </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <div class="item item-steve">
+                  <img src="./generate_images/images/control/fig_7_all_control_v3.png"  width="100%">
+                </div>   
+                  
+              </div>
+            </div>
+
+         <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" style="text-align: center;">Manipulation with drag</h2>
+              <div class="content has-text-justified">
+                <p>
+                  For click-based control, users provide garment images, person images, and point pairs to customize the generation. When the user drags the image, the starting and end points are translated as the garment and person points. While the parsed clothes are regarded as the garment image. Thus, the drag could be transformed into the click-based setting.
+                </p>
+              </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <div class="item item-steve">
+                  <img src="./generate_images/images/control/drag_control_v4_P1.png"  width="100%">
+                </div>  
+                <div class="item item-steve">
+                  <img src="./generate_images/images/control/drag_control_v4_P2.png"  width="100%">
+                </div> 
+                  
+              </div>
+            </div>
+
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" style="text-align: center;">Manipulation via automatic method</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We could calculate the control points by incorporating both the skeleton map and the dense pose. Thus, we could control the wearing style by setting different hyperparameters.
+                </p>
+              </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <div class="item item-steve">
+                  <img src="./generate_images/images/control/suppl_fig_1_auto_control_for_page_new.png"  width="100%">
+                </div>   
+                  
+              </div>
+            </div>
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" style="text-align: center;">Single-garment try-on</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Wear-Any-Way supports various of input types including shop-to-model, model-to-model, shop-to-street, model-to-street, street-to-street, etc.
+                </p>
+              </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <div class="item item-steve">
+                  <img src="./generate_images/images/base/supply_fig_3_single_for_page_new.png"  width="100%">
+                </div>   
+                  
+              </div>
+            </div>
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" style="text-align: center;">Multi-garment try-on</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Wear-Any-Way enables users to provide upper- and down-clothes simultaneously and generates the try-on results in one pass.
+                </p>
+              </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <div class="item item-steve">
+                  <img src="./generate_images/images/base/supply_fig_2_outfit_for_page_new.png"  width="100%">
+                </div>   
+                  
+              </div>
+            </div>
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2024wear,
+      title={Wear-Any-Way: Manipulable Virtual Try-on via Sparse Correspondence Alignment},
+      author={Chen, Mengting and Chen, Xi and Zhai, Zhonghua and Ju, Chen and Hong, Xuewen and Lan, Jinsong and Xiao, Shuai},
+      journal={arXiv preprint},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
