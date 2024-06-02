@@ -6,11 +6,11 @@ If you find Wear-Any-Way useful for your work please cite:
 
 ```
 @article{chen2024wear,
-      title={Wear-Any-Way: Manipulable Virtual Try-on via Sparse Correspondence Alignment},
-      author={Chen, Mengting and Chen, Xi and Zhai, Zhonghua and Ju, Chen and Hong, Xuewen and Lan, Jinsong and Xiao, Shuai},
-      journal={arXiv preprint},
-      year={2024}
-      }
+  title={Wear-any-way: Manipulable virtual try-on via sparse correspondence alignment},
+  author={Chen, Mengting and Chen, Xi and Zhai, Zhonghua and Ju, Chen and Hong, Xuewen and Lan, Jinsong and Xiao, Shuai},
+  journal={arXiv preprint arXiv:2403.12965},
+  year={2024}
+}
 ```
 
 # Website License
